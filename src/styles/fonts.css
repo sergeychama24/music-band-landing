@@ -1,0 +1,15 @@
+@font-face {
+    font-weight: bold;
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/HelveticaNeueBold.otf') format("opentype");
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/HelveticaNeueMedium.otf') format("opentype");
+}
