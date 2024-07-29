@@ -315,7 +315,7 @@ html {
 
 .swiper {
     width: calc(100% - var(--space-m));
-    margin-block-start: var(--space-xl); ;
+    margin-block-start: var(--space-xl);
 }
 
 .swiper-button-next::after,
