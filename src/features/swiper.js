@@ -3,13 +3,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: nextButton,
+    prevEl: prevButton,
   },
 
   breakpoints: {
@@ -23,7 +26,7 @@ const swiper = new Swiper('.swiper', {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 32,
+      spaceBetween: 64,
     },
   },
 });

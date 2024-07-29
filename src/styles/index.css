@@ -277,12 +277,17 @@ html {
     border-radius: var(--space-xs);
     padding-block: var(--space-xs);
     padding-inline: var(--space-s);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .show-card__button:hover {
     color: var(--accent-color);
     background-color: var(--white);
     cursor: pointer;
+}
+
+.music {
+    position: relative;
 }
 
 .music__card-cover {
@@ -314,11 +319,41 @@ html {
 }
 
 .swiper {
-    width: calc(100% - var(--space-m));
+    width: 85%;
     margin-block-start: var(--space-xl);
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    height: 300%;
+.music__list {
+    position: relative;
+}
+
+.prev-button {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    color: var(--accent-color);
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    color: var(--accent-color);
+}
+
+.next-button svg,
+.prev-button svg {
+    transition: fill 0.2s ease-in-out;
+}
+
+.next-button:hover svg,
+.prev-button:hover svg {
+    cursor: pointer;
+    fill: var(--white);
 }
