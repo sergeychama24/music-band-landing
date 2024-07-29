@@ -312,6 +312,7 @@ html {
 
 .card__info-heading {
     font-size: var(--font-xl);
+    text-align: center;
 }
 
 .card__info-subheading {
