@@ -14,5 +14,8 @@
     "stylelint-config-standard": "^36.0.1",
     "stylelint-order": "^6.0.4",
     "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "swiper": "^11.1.8"
   }
 }

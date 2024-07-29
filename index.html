@@ -167,86 +167,11 @@
         id="music"
       >
         <h2 class="heading">Music</h2>
-        <ul class="music__card-list">
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-          <li class="music__card">
-            <div class="music__card-cover">
-              <img
-                class="music__card-image"
-                src="./src/assets/images/albums/1.jpg"
-                alt="cover of album"
-              />
-            </div>
-            <div class="music__card-info">
-              <h3 class="card__info-heading">Cheshire Cat</h3>
-              <span class="card__info-subheading">1995</span>
-            </div>
-          </li>
-        </ul>
+        <div class="swiper">
+          <ul class="swiper-wrapper music__list"></ul>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
@@ -254,5 +179,26 @@
       type="module"
       src="/src/main.js"
     ></script>
+    <template id="music-card-template">
+      <li class="music__card swiper-slide">
+        <a
+          class="music__link"
+          href=""
+          target="_blank"
+        >
+          <div class="music__card-cover">
+            <img
+              class="music__card-image"
+              src=""
+              alt=""
+            />
+          </div>
+        </a>
+        <div class="music__card-info">
+          <h3 class="card__info-heading"></h3>
+          <span class="card__info-subheading"></span>
+        </div>
+      </li>
+    </template>
   </body>
 </html>

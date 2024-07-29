@@ -16,4 +16,5 @@
     --space-xl: 32px;
     --space-2xl: 40px;
     --space-3xl: 48px;
+    --swiper-navigation-color: var(--white);
 }
