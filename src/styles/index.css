@@ -9,6 +9,8 @@ html {
 .page {
     font-family: "HelveticaNeue", sans-serif;
     background-color: var(--black);
+    background-image: url("../assets/images/abstract-background.png");
+    background-attachment: fixed;
 }
 
 .header {
@@ -55,6 +57,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom: var(--space-xl) solid var(--black);
 }
 
 .hero__container::after {
@@ -97,7 +100,6 @@ html {
 
 .new-album {
     position: relative;
-    margin-block-start: var(--space-xl);
     padding-block: 256px;
     color: var(--white);
     background-image: url("../assets/images/newAlbumBG.jpg");
