@@ -2,27 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blink-182 | Homepage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="blink-182.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="./src/styles/index.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>blink-182</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="blink-182.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/styles/index.css"
+    />
   </head>
   <body class="page">
     <header class="header">
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a href="#hero">Homepage</a>
-          </li>
-          <li class="navigation__list-item">
             <a href="#new-album">New Album</a>
           </li>
           <li class="navigation__list-item">
-            <a href="#">Shows</a>
+            <a href="#shows">Shows</a>
           </li>
           <li class="navigation__list-item">
             <a href="#">Music</a>
@@ -40,48 +64,89 @@
         <ul class="links__list">
           <li class="links__list-item">
             <a href="">
-              <img src="./src/assets/images/facebook-logo.svg" alt="link to facebook page">
+              <img
+                src="./src/assets/images/facebook-logo.svg"
+                alt="link to facebook page"
+              />
             </a>
           </li>
           <li class="links__list-item">
             <a href="">
-              <img src="./src/assets/images/instagram-logo.svg" alt="link to instagram account">
+              <img
+                src="./src/assets/images/instagram-logo.svg"
+                alt="link to instagram account"
+              />
             </a>
           </li>
           <li class="links__list-item">
-            <a href="">
-              <img src="./src/assets/images/youtube-logo.svg" alt="link to youtube chanel">
+            <a
+              href="https://www.youtube.com/@blink182"
+              target="_blank"
+            >
+              <img
+                src="./src/assets/images/youtube-logo.svg"
+                alt="link to youtube chanel"
+              />
             </a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero__container" id="hero">
+      <section class="hero__container">
         <div class="hero">
           <div class="hero__logo-container">
-            <img class="hero__logo" src="./src/assets/images/blinkLogoWhite.png" alt="">
+            <img
+              class="hero__logo"
+              src="./src/assets/images/blinkLogoWhite.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
-      <section class="new-album" id="new-album">
+      <section
+        class="new-album"
+        id="new-album"
+      >
         <div class="new-album-card-container">
           <div class="new-album-card">
             <div class="new-album__cover-container">
-              <img class="new-album__cover" src="./src/assets/images/albumCover.jpg" alt="One More time album cover">
+              <img
+                class="new-album__cover"
+                src="./src/assets/images/albumCover.jpg"
+                alt="One More time album cover"
+              />
             </div>
             <div class="new-album__info">
               <h2 class="info__title">One More Time</h2>
-              <p class="info__description">ONE MORE TIME… marks the return of singer and guitarist Tom DeLonge, after he left the band and was replaced by Matt Skiba. This is blink-182’s 9th studio album (tenth if you consider Buddha, one of their original demo cassettes, as their first official release).</p>
+              <p class="info__description">
+                ONE MORE TIME… marks the return of singer and guitarist Tom
+                DeLonge, after he left the band and was replaced by Matt Skiba.
+                This is blink-182’s 9th studio album (tenth if you consider
+                Buddha, one of their original demo cassettes, as their first
+                official release).
+              </p>
               <div class="info__links">
-                <a href="https://open.spotify.com/album/00txDYFrU4LjWqwKE8iQJA" target="_blank">
+                <a
+                  href="https://open.spotify.com/album/00txDYFrU4LjWqwKE8iQJA"
+                  target="_blank"
+                >
                   <div>
-                    <img src="./src/assets/images/spotifyLogo.png" alt="">
+                    <img
+                      src="./src/assets/images/spotifyLogo.png"
+                      alt=""
+                    />
                   </div>
                 </a>
-                <a href="https://music.apple.com/us/album/one-more-time/1707257664" target="_blank">
+                <a
+                  href="https://music.apple.com/us/album/one-more-time/1707257664"
+                  target="_blank"
+                >
                   <div>
-                    <img src="./src/assets/images/appleMusicLogo.png" alt="">
+                    <img
+                      src="./src/assets/images/appleMusicLogo.png"
+                      alt=""
+                    />
                   </div>
                 </a>
               </div>
@@ -90,8 +155,18 @@
           </div>
         </div>
       </section>
+      <section
+        class="shows section-container"
+        id="shows"
+      >
+        <h1 class="heading">Shows</h1>
+        <ul class="shows__list"></ul>
+      </section>
     </main>
     <footer class="footer"></footer>
-    <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="/src/main.js"
+    ></script>
   </body>
 </html>

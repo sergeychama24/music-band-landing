@@ -1,6 +1,7 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+    --accent-color: #2a2aee;
     --font-xs: 12px;
     --font-s: 16px;
     --font-m: 20px;
@@ -9,7 +10,7 @@
     --font-3xl: 40px;
     --font-4xl: 48px;
     --font-5xl: 56px;
-    --space-sm: 8px;
+    --space-xs: 8px;
     --space-s: 16px;
     --space-m: 24px;
     --space-xl: 32px;
