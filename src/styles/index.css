@@ -41,6 +41,10 @@ html {
     gap: var(--space-xl);
 }
 
+.navigation__list-item:hover {
+    color: var(--accent-color);
+}
+
 .hero {
     z-index: 1;
     display: flex;

@@ -1,21 +1,20 @@
 const prepareMusicCard = (music) => {
-  const musicCardTemplate = document.querySelector(
-    '#music-card-template',
-  ).content;
+  const cardTemplate = document.querySelector('#music-card-template').content;
 
-  const card = musicCardTemplate.querySelector('.music__card').cloneNode(true);
-  const musicImage = card.querySelector('.music__card-image');
-  musicImage.src = music.cover;
-  musicImage.alt = `Cover of ${music.title} album`;
+  const card = cardTemplate.querySelector('.music__card').cloneNode(true);
 
-  const musicTitle = card.querySelector('.card__info-heading');
-  musicTitle.textContent = `${music.title}`;
+  const cardCover = card.querySelector('.music__card-image');
+  cardCover.src = music.cover;
+  cardCover.alt = `Cover of ${music.title} album`;
 
-  const musicYear = card.querySelector('.card__info-subheading');
-  musicYear.textContent = `${music.year}`;
+  const cardTitle = card.querySelector('.card__info-heading');
+  cardTitle.textContent = `${music.title}`;
 
-  const musicLink = card.querySelector('.music__link');
-  musicLink.href = music.link;
+  const cardYear = card.querySelector('.card__info-subheading');
+  cardYear.textContent = `${music.year}`;
+
+  const link = card.querySelector('.music__link');
+  link.href = music.link;
 
   return card;
 };
