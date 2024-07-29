@@ -116,96 +116,96 @@ const shows = [
       state: 'United Kingdom',
     },
   },
-  // {
-  //   month: "aug",
-  //   day: "24",
-  //   place: "Leeds Festival 2024",
-  //   region: {
-  //     city: "Leeds",
-  //     state: "United Kingdom",
-  //   },
-  // },
-  // {
-  //   month: "aug",
-  //   day: "26",
-  //   place: "The SSE Arena, Belfast",
-  //   region: {
-  //     city: "Belfast",
-  //     state: "United Kingdom",
-  //   },
-  // },
-  // {
-  //   month: "aug",
-  //   day: "27",
-  //   place: "Royal Hospital Kilmainham",
-  //   region: {
-  //     city: "Dublin",
-  //     state: "Ireland",
-  //   },
-  // },
-  // {
-  //   month: "aug",
-  //   day: "29",
-  //   place: "OVO Hydro",
-  //   region: {
-  //     city: "Glasgow",
-  //     state: "United Kingdom",
-  //   },
-  // },
-  // {
-  //   month: "aug",
-  //   day: "30",
-  //   place: "OVO Hydro",
-  //   region: {
-  //     city: "Glasgow",
-  //     state: "United Kingdom",
-  //   },
-  // },
-  // {
-  //   month: "sep",
-  //   day: "27",
-  //   place: "Oceans Calling 2024",
-  //   region: {
-  //     city: "Ocean City",
-  //     state: "MD",
-  //   },
-  // },
-  // {
-  //   month: "sep",
-  //   day: "28",
-  //   place: "South Star Music Festival 2024",
-  //   region: {
-  //     city: "Huntsville",
-  //     state: "AL",
-  //   },
-  // },
-  // {
-  //   month: "oct",
-  //   day: "4",
-  //   place: "Austin City Limits Music Festival 2024",
-  //   region: {
-  //     city: "Austin",
-  //     state: "TX",
-  //   },
-  // },
-  // {
-  //   month: "oct",
-  //   day: "11",
-  //   place: "Austin City Limits Festival - Weekend 2 2024",
-  //   region: {
-  //     city: "Austin",
-  //     state: "TX",
-  //   },
-  // },
-  // {
-  //   month: "nov",
-  //   day: "9",
-  //   place: "Foro Sol",
-  //   region: {
-  //     city: "Mexico",
-  //     state: "Mexico",
-  //   },
-  // },
+  {
+    month: 'aug',
+    day: '24',
+    place: 'Leeds Festival 2024',
+    region: {
+      city: 'Leeds',
+      state: 'United Kingdom',
+    },
+  },
+  {
+    month: 'aug',
+    day: '26',
+    place: 'The SSE Arena, Belfast',
+    region: {
+      city: 'Belfast',
+      state: 'United Kingdom',
+    },
+  },
+  {
+    month: 'aug',
+    day: '27',
+    place: 'Royal Hospital Kilmainham',
+    region: {
+      city: 'Dublin',
+      state: 'Ireland',
+    },
+  },
+  {
+    month: 'aug',
+    day: '29',
+    place: 'OVO Hydro',
+    region: {
+      city: 'Glasgow',
+      state: 'United Kingdom',
+    },
+  },
+  {
+    month: 'aug',
+    day: '30',
+    place: 'OVO Hydro',
+    region: {
+      city: 'Glasgow',
+      state: 'United Kingdom',
+    },
+  },
+  {
+    month: 'sep',
+    day: '27',
+    place: 'Oceans Calling 2024',
+    region: {
+      city: 'Ocean City',
+      state: 'MD',
+    },
+  },
+  {
+    month: 'sep',
+    day: '28',
+    place: 'South Star Music Festival 2024',
+    region: {
+      city: 'Huntsville',
+      state: 'AL',
+    },
+  },
+  {
+    month: 'oct',
+    day: '4',
+    place: 'Austin City Limits Music Festival 2024',
+    region: {
+      city: 'Austin',
+      state: 'TX',
+    },
+  },
+  {
+    month: 'oct',
+    day: '11',
+    place: 'Austin City Limits Festival - Weekend 2 2024',
+    region: {
+      city: 'Austin',
+      state: 'TX',
+    },
+  },
+  {
+    month: 'nov',
+    day: '9',
+    place: 'Foro Sol',
+    region: {
+      city: 'Mexico',
+      state: 'Mexico',
+    },
+  },
 ];
 
 export default shows;
