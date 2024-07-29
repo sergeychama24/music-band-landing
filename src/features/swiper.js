@@ -3,16 +3,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const nextButton = document.querySelector('.next-button');
-const prevButton = document.querySelector('.prev-button');
+const musicNextButton = document.querySelector('.next-button--music');
+const musicPrevButton = document.querySelector('.prev-button--music');
 
-const swiper = new Swiper('.swiper', {
+const videosNextButton = document.querySelector('.next-button--videos');
+const videosPrevButton = document.querySelector('.prev-button--videos');
+
+export const swiperMusic = new Swiper('.swiper-music', {
   direction: 'horizontal',
   loop: true,
 
   navigation: {
-    nextEl: nextButton,
-    prevEl: prevButton,
+    prevEl: musicPrevButton,
+    nextEl: musicNextButton,
   },
 
   breakpoints: {
@@ -31,4 +34,14 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-export default swiper;
+export const swiperVideos = new Swiper('.swiper-videos', {
+  direction: 'horizontal',
+  loop: true,
+
+  slidesPerView: 'auto',
+
+  navigation: {
+    nextEl: videosNextButton,
+    prevEl: videosPrevButton,
+  },
+});
