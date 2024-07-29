@@ -225,7 +225,7 @@ html {
     margin-block-start: var(--space-xl);
 }
 
-.shows-card {
+.show-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -236,7 +236,7 @@ html {
     background-color: var(--black);
 }
 
-.shows-card:first-of-type {
+.show-card:first-of-type {
     border-top: 1px solid var(--white);
 }
 
@@ -246,36 +246,35 @@ html {
     gap: var(--space-2xl);
 }
 
-
-.shows-card__date {
+.show-card__date {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.shows-card__date-item {
+.show-card__date-item {
     line-height: 100%;
+    min-inline-size: 60px;
+    text-align: center;
 }
 
-.shows-card__date-item:first-of-type {
+.show-card__date-item.day {
     font-size: var(--font-3xl);
-    padding-inline: var(--space-xs);
 }
 
-.shows-card__date-item:last-of-type {
+.show-card__date-item.month {
     font-size: var(--font-m);
-    padding-inline: var(--space-xs);
 }
 
-.shows-card__heading {
+.show-card__heading {
     font-size: var(--font-2xl);
 }
 
-.shows-card__city {
+.show-card__city {
     font-size: var(--font-m);
 }
 
-.show-card__button {
+.show-card__buy-button {
     font-size: var(--font-m);
     border: 2px solid var(--accent-color);
     border-radius: var(--space-xs);
@@ -284,7 +283,7 @@ html {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.show-card__button:hover {
+.show-card__buy-button:hover {
     color: var(--accent-color);
     background-color: var(--white);
     cursor: pointer;

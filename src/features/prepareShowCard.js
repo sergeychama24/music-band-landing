@@ -1,58 +1,23 @@
 function prepareShowCard(cardData) {
-  const showCard = document.createElement("li");
-  showCard.classList.add("shows-card");
+  const cardTemplate = document.querySelector('#show-card-template').content;
+  const card = cardTemplate.querySelector('.show-card').cloneNode(true);
 
-  const colHalf = document.createElement("div");
-  colHalf.classList.add("col-half");
-  showCard.prepend(colHalf);
+  const day = card.querySelector('.day');
+  day.textContent = cardData.day;
 
-  const dateDiv = document.createElement("div");
-  dateDiv.classList.add("shows-card__date");
-  colHalf.prepend(dateDiv);
+  const month = card.querySelector('.month');
+  month.textContent = cardData.month;
 
-  for (let i = 0; i < 2; i++) {
-    const dateItem = document.createElement("span");
-    dateItem.classList.add("shows-card__date-item");
-    dateDiv.prepend(dateItem);
-    if (i === 0) {
-      dateItem.textContent = cardData.month;
-    }
-    if (i === 1) {
-      dateItem.textContent = cardData.day;
-    }
-  }
+  const heading = card.querySelector('.show-card__heading');
+  heading.textContent = cardData.place;
 
-  const showHeading = document.createElement("h3");
-  showHeading.classList.add("shows-card__heading");
-  showHeading.textContent = cardData.place;
-  colHalf.append(showHeading);
-
-  const secondHalf = document.createElement("div");
-  secondHalf.classList.add("col-half");
-
-  const city = document.createElement("span");
-  city.classList.add("shows-card__city");
+  const city = card.querySelector('.show-card__city');
   city.textContent = `${cardData.region.city}, ${cardData.region.state}`;
 
-  const buyLink = document.createElement("a");
-  buyLink.setAttribute(
-    "href",
-    "https://www.ticketmaster.ca/blink-182-tickets/artist/790708",
-  );
-  buyLink.setAttribute("target", "_blank");
+  const buyLink = card.querySelector('.show-card__buy-link');
+  buyLink.href = 'https://www.ticketmaster.ca/blink-182-tickets/artist/790708';
 
-  const buyTicketButton = document.createElement("button");
-  buyTicketButton.classList.add("show-card__button");
-  buyTicketButton.textContent = "Buy Ticket";
-
-  buyLink.prepend(buyTicketButton);
-
-  secondHalf.prepend(buyLink);
-  secondHalf.prepend(city);
-
-  showCard.append(secondHalf);
-
-  return showCard;
+  return card;
 }
 
 export default prepareShowCard;
