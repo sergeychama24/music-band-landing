@@ -10,6 +10,9 @@ html {
     font-family: "HelveticaNeue", sans-serif;
     background-color: var(--black);
     background-image: url("../assets/images/abstract-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -106,6 +109,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom: var(--space-2xl) solid var(--black);
 }
 
 .new-album::after {
@@ -225,6 +229,7 @@ html {
     padding-inline: var(--space-s);
     padding-block: var(--space-m);
     border-bottom: 1px solid var(--white);
+    background-color: var(--black);
 }
 
 .shows-card:first-of-type {
@@ -311,4 +316,9 @@ html {
 .swiper {
     width: calc(100% - var(--space-m));
     margin-block-start: var(--space-xl); ;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    height: 300%;
 }
