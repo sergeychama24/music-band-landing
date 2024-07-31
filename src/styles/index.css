@@ -211,9 +211,10 @@ html {
 }
 
 .section-container {
-    margin: 0 auto;
-    margin-bottom: var(--space-3xl);
     max-inline-size: 1200px;
+    padding-block: var(--space-3xl);
+    padding-inline: var(--space-xl);
+    margin: auto;
     color: var(--white);
 }
 
