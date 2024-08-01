@@ -26,6 +26,7 @@ html {
     display: flex;
     justify-content: space-between;
     max-inline-size: 1440px;
+    padding-inline: var(--space-xl);
     margin: 0 auto;
     font-size: var(--font-m);
 }
